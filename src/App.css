@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 
 .App-logo {
@@ -12,7 +15,11 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none; 
+  user-select: none; 
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

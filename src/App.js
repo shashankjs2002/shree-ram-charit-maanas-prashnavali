@@ -4,8 +4,8 @@ import Navbar from './components/Navbar';
 
 function App() {
   return (
-    <div className="flex justify-center">
-      {/* <Navbar/> */}
+    <div className="items-center App bg-yellow-50 min-h-screen">
+      <Navbar/>
       <Grid/>
     </div>
   );
