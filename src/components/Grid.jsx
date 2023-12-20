@@ -14,6 +14,8 @@ const Grid =() => {
         // console.log(chaupayi)
         setchaupai(chaupayian[idx%9])
 
+        if(window) window.location = '#answer'
+
 
     }
     return(
@@ -30,7 +32,7 @@ const Grid =() => {
 
 
         </div>
-        {chaupai && <div className="flex justify-center flex-col w-[700px] max-md:w-screen text-left">
+        {chaupai && <div id="answer" className="flex justify-center flex-col w-[700px] max-md:w-screen text-left">
 
             <div>
                 <span className="text-lg text-orange-500 font-bold">चौपाई: </span> 
