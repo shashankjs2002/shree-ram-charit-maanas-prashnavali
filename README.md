@@ -1,70 +1,17 @@
-# Getting Started with Create React App
+### `How to use Ram Shalaka`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. भगवान श्री राम से प्रार्थना करें और अपने प्रश्न पर ध्यान केंद्रित करें।
+2. अपने मन में स्पष्ट और स्पष्ट शब्दों में प्रश्न पूछें।
+3. रामायण प्रश्नावली आपको आपके क्लिक के अनुसार आपके प्रश्न का उत्तर दिलाएगी।
+4. कृपया एक दिन में केवल एक प्रश्न पूछें।
+5. केवल एक बार क्लिक करें क्योंकि एक से अधिक बार क्लिक करना भगवान में विश्वास की कमी को दर्शाता है।
 
-## Available Scripts
 
-In the project directory, you can run:
 
-### `npm start`
+### `About Prashnavali`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+रामायण प्रश्नावली या रामशलाका संत गोस्वामी तुलसीदास द्वारा रचित 'श्री राम चरित मानस' का एक अंश है।
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+रामायण प्रश्नावली का उपयोग आपके प्रश्नों के उत्तर पाने या आपके द्वारा किए जाने वाले प्रयासों के परिणाम की भविष्यवाणी करने के लिए किया जाता है। उत्तर/भविष्यवाणियां 'श्री राम चरित मानस' या 'रामायण' के चोपाई पर आधारित हैं।
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+रामायण प्रश्नावली एक 15x15 ग्रिड है। ग्रिड के प्रत्येक वर्ग में श्री राम चरित मानस की नौ चौपाइयों में से एक अक्षर है। **श्री राम चरित मानस में बताई गई प्रक्रिया के अनुसार, उपयोगकर्ता को अपनी आंखें बंद करनी होती हैं और अपनी उंगली ग्रिड पर रखनी होती है। उपयोगकर्ता द्वारा जिस वर्ग पर उंगली रखी गई थी, उस वर्ग से शुरू करके हर नौवें वर्ग से अक्षर लिए जाते हैं और एक क्रम में जोड़ दिए जाते हैं।** यह 'श्री राम लिखित मानस' से एक चौपाई बनती है। पूछे गए प्रश्न का उत्तर इस प्रकार बनी चोपाई पर आधारित है।

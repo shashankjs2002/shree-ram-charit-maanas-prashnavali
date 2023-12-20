@@ -18,7 +18,7 @@ const Grid =() => {
     }
     return(
         <>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-5">
         <div className="grid max-md:w-full md flex-wrap w-[700px] border-orange-500 border-2" style={{gridTemplateColumns:" repeat(15, minmax(0, 1fr))"}}>
         
         {gridLetters.map((letter, idx) => {
