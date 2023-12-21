@@ -4,6 +4,7 @@ const Navbar = () => {
 
   return (
     
+                
             <div className="max-w-screen-xl mx-auto px-4 md:px-8">
                 <div className="items-start justify-between py-4 border-b md:flex">
                     <div className="max-w-[700px] text-left">
