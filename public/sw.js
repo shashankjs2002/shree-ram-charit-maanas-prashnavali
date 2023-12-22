@@ -11,6 +11,7 @@ let files = [
     '/static/js/787.2c48817c.chunk.js',
     '/static/js/787.2c48817c.chunk.js.map',
     '/static/js/main.d7f334e7.js',
+    '/static/js/main.166c7c14.js',
     '/static/js/main.dc10a7ae.js',
     '/static/js/main.d7f334e7.js.LICENSE.txt',
     '/static/js/main.d7f334e7.js.map',
