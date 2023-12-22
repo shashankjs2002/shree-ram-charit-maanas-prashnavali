@@ -10,7 +10,18 @@ this.addEventListener("install", (event) => {
                 'favicon.ico',
                 'logo192.png',
                 '/ws',
-                // 'https://cdn.tailwindcss.com/3.4.0'
+
+                '/static/js/787.2c48817c.chunk.js',
+                '/static/js/787.2c48817c.chunk.js.map',
+                '/static/js/main.d7f334e7.js',
+                '/static/js/main.d7f334e7.js.LICENSE.txt',
+                '/static/js/main.d7f334e7.js.map',
+                '/static/css/main.98b8690a.css',
+                '/static/css/main.98b8690a.css.map',
+                
+
+
+            
             ])
         })
     )
