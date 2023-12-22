@@ -1,7 +1,7 @@
 let cacheData = "prashanavali";
 
 this.addEventListener("install", (event) => {
-    event.waitUnitil(
+    event.waitUntil(
         caches.open(cacheData).then((cache) => {
             cache.addAll([
                 '/static/js/bundle.js',
