@@ -15,10 +15,6 @@ let files = [
     '/static/js/main.d7f334e7.js.map',
     '/static/css/main.98b8690a.css',
     '/static/css/main.98b8690a.css.map',
-
-
-
-
 ]
 this.addEventListener("install", (event) => {
 
@@ -57,7 +53,6 @@ this.addEventListener("install", (event) => {
 
 this.addEventListener("fetch", (event) => {
     if(!navigator.onLine){
-
         event.respondWith(
             caches.match(event.request).then((result) => {
                 if(result) return result;

@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react"
 import { gridLetters, chaupayian } from "../assets/constants"
 
-const Grid =() => {
+const Grid =({handleNotificationClick}) => {
     const [chaupai, setchaupai] = useState(null)
     useEffect(() => {
         console.log(gridLetters.length)
@@ -13,6 +13,7 @@ const Grid =() => {
         // let chaupayi = chaupayian[idx%9]
         // console.log(chaupayi)
         setchaupai(chaupayian[idx%9])
+        handleNotificationClick("Aapka karya Fal", chaupayian[idx%9].fal )
 
         if(window) window.location = '#answer'
 
