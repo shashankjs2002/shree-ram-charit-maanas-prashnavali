@@ -3,6 +3,7 @@ import './App.css';
 import Grid from './components/Grid';
 import Navbar from './components/Navbar';
 import { logDOM } from '@testing-library/react';
+import Sidebar from './components/Sidebar';
 
 
 
@@ -54,7 +55,12 @@ function App() {
   const showNotification = (title= "Notification Title",body='This is body of the notification', icon =  '/logo192.png') => {
     const options = {
       body,
-      icon, // Replace with the path to your icon
+      icon,
+      badge: icon,
+      vibrate: [200, 100, 200], // Vibration pattern
+      data: {
+        category: 'important', // Notification category
+      },
     };
 
     // setInterval(()=>{
@@ -69,6 +75,7 @@ function App() {
       {/* <div className='bg-yellow-200 text-orange-600 font-semibold ' onClick={()=>{handleNotificationClick()}}>Send Notification</div> */}
       {!navigator.onLine? <div className='bg-yellow-200 text-orange-600 font-semibold '>Offline or Connectivity Error</div>: ""}
       <Navbar/>
+      <Sidebar/>
       <Grid handleNotificationClick={handleNotificationClick}/>
     </div>
   );
