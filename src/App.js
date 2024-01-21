@@ -32,7 +32,7 @@ function App() {
   const handleNotificationClick = (title, body, icon) => {
     if ('Notification' in window) {
       if (Notification.permission === 'granted') {
-        console.log("first")
+        // console.log("first")
         showNotification(title, body, icon);
       } else if (Notification.permission !== 'denied') {
         requestNotificationPermission();
@@ -43,7 +43,7 @@ function App() {
   const requestNotificationPermission = async () => {
     try {
       const permission = await Notification.requestPermission();
-      console.log("second")
+      // console.log("second")
       if (permission === 'granted') {
         showNotification();
       }

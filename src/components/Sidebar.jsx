@@ -8,15 +8,16 @@ const Sidebar = () => {
 
   const [pastChaupayian, setPastChaupayian] = useState(null)
     
-    
+  
+  
+  let history = JSON.parse(localStorage.getItem("history"))
   useEffect(() => {
     if(localStorage.getItem("history")){
       setPastChaupayian(JSON.parse(localStorage.getItem("history")))
-      console.log(JSON.parse(localStorage.getItem("history")))
+      // console.log(JSON.parse(localStorage.getItem("history")))
     }
 
-  }, [open])
-  
+  }, [open, history])
 
   return (
     <div>
@@ -56,7 +57,7 @@ const Sidebar = () => {
                 
               {pastChaupayian && pastChaupayian.map((thisChaupai, idx) =>{
 
-                return <HistoryCard key={idx} thisChaupai ={thisChaupai} />
+                return <HistoryCard key={idx} thisChaupai ={thisChaupai} history={history}/>
                 }
               )
               }

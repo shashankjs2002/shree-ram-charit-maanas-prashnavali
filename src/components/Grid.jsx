@@ -5,13 +5,13 @@ import { gridLetters, chaupayian } from "../assets/constants"
 const Grid =({handleNotificationClick}) => {
     const [chaupai, setchaupai] = useState(null)
     useEffect(() => {
-        console.log(gridLetters.length)
+        // console.log(gridLetters.length)
     }, [])
      
 
     
     const handleLetterClick = (idx) => {
-        console.log(idx);
+        // console.log(idx);
         // let chaupayi = chaupayian[idx%9]
         // console.log(chaupayi)
         setchaupai(chaupayian[idx%9])
@@ -25,13 +25,13 @@ const Grid =({handleNotificationClick}) => {
             let myhistory = JSON.parse(localStorage.getItem("history"))
             // console.log(myhistory)
             localStorage.setItem("history", JSON.stringify([...myhistory,{...chaupayian[idx%9], _id : _id ,time: currenttime, date: currentdate, title: `फल_${_id}`}]))
-            console.log(("history", JSON.stringify(...myhistory,{...chaupayian[idx%9], _id : _id , time: currenttime, date: currentdate, title: `फल_${_id}`})))
+            // console.log(("history", JSON.stringify(...myhistory,{...chaupayian[idx%9], _id : _id , time: currenttime, date: currentdate, title: `फल_${_id}`})))
         }
         else{
             let entry = {...chaupayian[idx%9], _id : _id , time: currenttime, date: currentdate, title: `फल_${_id}`}
             // localStorage.setItem("history", (JSON.stringify([entry])))
             localStorage.setItem("history", JSON.stringify([entry]))
-            console.log({...chaupayian[idx%9], _id : _id , time: currenttime, date: currentdate, title: `फल_${_id}`})
+            // console.log({...chaupayian[idx%9], _id : _id , time: currenttime, date: currentdate, title: `फल_${_id}`})
         }
         
         

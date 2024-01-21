@@ -1,20 +1,38 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
-const HistoryCard = ({ thisChaupai }) => {
+const HistoryCard = ({ thisChaupai , history}) => {
 
     const [isTitleEditable, setIsTitleEditable] = useState(false)
     const [title, setTitle] = useState(thisChaupai.title)
 
     const changeTitle = (e) => {
         setTitle(e.currentTarget.innerText)
-        console.log(e.currentTarget.innerText)
+        // console.log(e.currentTarget.innerText)
+    }
+
+
+    useEffect(() => {
+    
+    }, [history])
+    
+
+    const handleDelete = (thisChaupai) => {
+        // let history = JSON.parse(localStorage.getItem("history"))
+
+        
+        let newArray = history.filter((item, index) => item._id !== thisChaupai._id)
+            
+            
+
+            
+        localStorage.setItem("history", JSON.stringify(newArray))
     }
 
 
     const toggleTitleEdit = (thisChaupai) => {
         if (isTitleEditable) {
-            let history = JSON.parse(localStorage.getItem("history"))
+            // let history = JSON.parse(localStorage.getItem("history"))
 
             // let newH  = history.find({_id: thisChaupai._id})
 
@@ -25,7 +43,7 @@ const HistoryCard = ({ thisChaupai }) => {
                 }
             }
 
-            console.log(history)
+            // console.log(history)
 
             localStorage.setItem("history", JSON.stringify(history))
 
@@ -54,7 +72,7 @@ const HistoryCard = ({ thisChaupai }) => {
                 </span>
                 <span >
 
-                    <i className="fa-solid fa-trash ml-3" />
+                    <i className="fa-solid fa-trash ml-3" onClick={() => handleDelete(thisChaupai)} />
 
                 </span>
             </div>
