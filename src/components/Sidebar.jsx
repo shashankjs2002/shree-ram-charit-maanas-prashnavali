@@ -21,7 +21,7 @@ const Sidebar = () => {
 
   return (
     <div>
-      <div className='absolute text-sm md:text-md top-4 right-3 px-2 py-1 font-bold rounded-md border bg-[#fab163]' onClick={()=>{setOpen(true)}}>
+      <div className='absolute hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md top-4 right-3 px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}>
       <i class="fa-solid fa-clock-rotate-left mx-1"/>
         History
       </div>
@@ -46,7 +46,7 @@ const Sidebar = () => {
             </div>
 
 
-            <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+            <div className="flex h-full  flex-col overflow-y-scroll bg-white py-6 shadow-xl">
               <div className="px-4 sm:px-6">
                 <h2 className="text-base font-semibold leading-6 text-gray-900">
                   पूर्व फल
@@ -55,12 +55,14 @@ const Sidebar = () => {
               <hr />
               <div className="relative mt-6 flex-1 px-4 sm:px-6">
                 
-              {pastChaupayian && pastChaupayian.map((thisChaupai, idx) =>{
+              {pastChaupayian &&   pastChaupayian.map((thisChaupai, idx) =>{
 
                 return <HistoryCard key={idx} thisChaupai ={thisChaupai} history={history}/>
                 }
               )
-              }
+              
+            }
+            {!pastChaupayian && <div>No history</div>}
 
 
               </div>

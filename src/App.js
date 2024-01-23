@@ -4,6 +4,7 @@ import Grid from './components/Grid';
 import Navbar from './components/Navbar';
 import { logDOM } from '@testing-library/react';
 import Sidebar from './components/Sidebar';
+import Contact from './components/Contact';
 
 
 
@@ -70,13 +71,14 @@ function App() {
   };
 
   return (
-    <div className="items-center App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
+    <div className="items-center pt-6 App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
 
       {/* <div className='bg-yellow-200 text-orange-600 font-semibold ' onClick={()=>{handleNotificationClick()}}>Send Notification</div> */}
       {!navigator.onLine? <div className='bg-yellow-200 text-orange-600 font-semibold '>Offline or Connectivity Error</div>: ""}
       <Navbar/>
       <Sidebar/>
       <Grid handleNotificationClick={handleNotificationClick}/>
+      <Contact/>
     </div>
   );
 }
