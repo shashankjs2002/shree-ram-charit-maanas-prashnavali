@@ -63,6 +63,7 @@ const Sidebar = () => {
               
             }
             {!pastChaupayian && <div>No history</div>}
+            {pastChaupayian && !pastChaupayian.length && <div>No history</div>}
 
 
               </div>
