@@ -15,7 +15,7 @@ const Grid = ({ handleNotificationClick }) => {
         // let chaupayi = chaupayian[idx%9]
         // console.log(chaupayi)
         setchaupai(chaupayian[idx % 9])
-        handleNotificationClick("Aapka karya Fal", chaupayian[idx % 9].fal)
+        
 
         if (window) window.location = '#answer'
         let currenttime = new Date()
@@ -35,6 +35,7 @@ const Grid = ({ handleNotificationClick }) => {
         }
 
 
+        handleNotificationClick("Aapka karya Fal", chaupayian[idx % 9].fal)
 
 
     }
