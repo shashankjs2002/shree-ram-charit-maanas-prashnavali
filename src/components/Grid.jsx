@@ -58,7 +58,7 @@ const Grid = ({ handleNotificationClick, history, setHistory }) => {
             <div id="answer">
 
         
-            {chaupai && <div id="answer-div" className="flex justify-center flex-col max-w-[700px] max-md:w-screen text-left border rounded-md bg-[#f3c994] border-orange-400 my-5 px-2">
+            {chaupai && <div id="answer-div" className="flex justify-center flex-col max-w-[700px]  text-left border rounded-md bg-[#f3c994] border-orange-400 my-5 px-1 mx-5">
                 <span className="text-orange-500 font-bold  text-center">फल</span>
             <table className='table-auto'>
                 <tbody>
@@ -88,7 +88,7 @@ const Grid = ({ handleNotificationClick, history, setHistory }) => {
 
             </div>
 
-            <div id="know-more" className="my-4 text-base text-left max-w-[650px] md:my-7 border-b">
+            <div id="know-more" className="my-4 text-base text-left max-w-[650px] md:my-7 border-b mx-3">
                 <h3 className="font-semibold text-lg my-3">श्री राम शलाका क्या है?</h3>
                 <p>
                     श्री राम शलाका प्रश्नावली एक ऐसा उपकरण है, जो आपको अपने जीवन के रहस्यों को सुलझाने में मदद करता है। यह आपको अपने आत्मविश्वास और आस्था को बढ़ाने में भी सहायक है। इसलिए, अगर आप भी अपने जीवन में कुछ बदलाव लाना चाहते हैं या अपने किसी प्रश्न का उत्तर जानना चाहते हैं, तो श्री राम शलाका प्रश्नावली का उपयोग करें और अपने जीवन को खुशहाल और सफल बनाएं।
