@@ -24,7 +24,7 @@ export default function swDev() {
 
     let swURL = `${process.env.PUBLIC_URL}/sw.js`
     navigator.serviceWorker.register(swURL).then((res) => {
-        console.log("Response: ", res)
+        // console.log("Response: ", res)
         // return res.pushManager.getSubscription().then(function(subscription){
         //     return res.pushManager.subscribe({
         //         userVisibleOnly:true,

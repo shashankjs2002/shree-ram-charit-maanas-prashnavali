@@ -3,28 +3,43 @@ import HistoryCard from './HistoryCard'
 
 
 
-const Sidebar = () => {
+const Sidebar = ({history, setHistory}) => {
   const [open, setOpen] = useState(false)
 
   const [pastChaupayian, setPastChaupayian] = useState(null)
-    
   
   
-  let history = JSON.parse(localStorage.getItem("history"))
+  // const [history, setHistory] = useState(JSON.parse(localStorage.getItem("history")))
+  
+  // let history = JSON.parse(localStorage.getItem("history"))
   useEffect(() => {
     if(localStorage.getItem("history")){
       setPastChaupayian(JSON.parse(localStorage.getItem("history")))
       // console.log(JSON.parse(localStorage.getItem("history")))
     }
 
-  }, [open, history])
+  }, [history])
 
   return (
     <div>
-      <div className='absolute hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md top-4 right-3 px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}>
-      <i class="fa-solid fa-clock-rotate-left mx-1"/>
-        History
-      </div>
+
+    
+        <div className='absolute hover:cursor-pointer  text-sm md:text-md top-4 left-3 px-2 py-1 ' >
+
+        <img
+                    src="/banner.png"
+                    width={120}
+                    height={50}
+                    alt="JankiNathDas logo"
+                />
+          </div>
+        {/* <div className=' hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md  px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}> */}
+        <div className='absolute hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md top-4 right-3 px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}>
+
+          <i className="fa-solid fa-clock-rotate-left mx-1"/>
+            History
+          </div>
+      
 
 
 
@@ -57,7 +72,7 @@ const Sidebar = () => {
                 
               {pastChaupayian &&   pastChaupayian.map((thisChaupai, idx) =>{
 
-                return <HistoryCard key={idx} thisChaupai ={thisChaupai} history={history}/>
+                return <HistoryCard key={idx} thisChaupai ={thisChaupai} history={history} setHistory={setHistory}/>
                 }
               )
               

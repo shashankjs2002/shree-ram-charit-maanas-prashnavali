@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 
-const HistoryCard = ({ thisChaupai , history}) => {
+const HistoryCard = ({ thisChaupai , history, setHistory}) => {
 
     const [isTitleEditable, setIsTitleEditable] = useState(false)
     const [title, setTitle] = useState(thisChaupai.title)
@@ -12,9 +12,9 @@ const HistoryCard = ({ thisChaupai , history}) => {
     }
 
 
-    useEffect(() => {
+    // useEffect(() => {
     
-    }, [history])
+    // }, [history])
     
 
     const handleDelete = (thisChaupai) => {
@@ -27,6 +27,8 @@ const HistoryCard = ({ thisChaupai , history}) => {
 
             
         localStorage.setItem("history", JSON.stringify(newArray))
+        setHistory(newArray)
+        
     }
 
 
@@ -46,6 +48,7 @@ const HistoryCard = ({ thisChaupai , history}) => {
             // console.log(history)
 
             localStorage.setItem("history", JSON.stringify(history))
+            setHistory(history)
 
         }
         setIsTitleEditable(!isTitleEditable)
@@ -56,7 +59,7 @@ const HistoryCard = ({ thisChaupai , history}) => {
             <div className='flex justify-between mb-2'>
 
 
-                <span className='text-md md:text-lg flex gap-1 '>
+                <span className='text-md md:text-md flex gap-1 '>
                     <span className='break-all' suppressContentEditableWarning={true} contentEditable={isTitleEditable} onInput={(e) => changeTitle(e)}>
                         {title}
 
@@ -80,18 +83,18 @@ const HistoryCard = ({ thisChaupai , history}) => {
             <table className='table-auto'>
                 <tbody>
                     <tr className='border-t border-orange-500'>
-                        <td className="text-sm md:text-lg text-orange-500 font-bold py-2">चौपाई: </td>
-                        <td className="text-sm md:text-lg py-2">{thisChaupai.chaupai}</td>
+                        <td className="text-sm md:text-md text-orange-500 font-bold py-2">चौपाई: </td>
+                        <td className="text-sm md:text-md py-2">{thisChaupai.chaupai}</td>
                     </tr>
 
 
                     <tr className='border-t border-orange-500'>
-                        <td className="text-sm md:text-lg text-orange-500 font-bold py-2">अर्थ: </td>
-                        <td className="text-sm md:text-lg py-2">{thisChaupai.context}</td>
+                        <td className="text-sm md:text-md text-orange-500 font-bold py-2">अर्थ: </td>
+                        <td className="text-sm md:text-md py-2">{thisChaupai.context}</td>
                     </tr>
                     <tr className='border-t border-b border-orange-500'>
-                        <td className="text-sm md:text-lg text-orange-500 font-bold py-2">फल: </td>
-                        <td className="text-sm md:text-lg py-2">{thisChaupai.fal}</td>
+                        <td className="text-sm md:text-md text-orange-500 font-bold py-2">फल: </td>
+                        <td className="text-sm md:text-md py-2">{thisChaupai.fal}</td>
                     </tr>
 
                 </tbody>
@@ -101,7 +104,7 @@ const HistoryCard = ({ thisChaupai , history}) => {
             </table>
             <span className='flex justify-end'>
                 <span>
-                    <i class="fa-solid fa-calendar mx-2" />
+                    <i className="fa-solid fa-calendar mx-2" />
                     {thisChaupai.date}
                 </span>
             </span>

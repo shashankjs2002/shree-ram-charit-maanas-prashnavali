@@ -5,11 +5,13 @@ import Navbar from './components/Navbar';
 import { logDOM } from '@testing-library/react';
 import Sidebar from './components/Sidebar';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 
 
 function App() {
   const [isOnline, setIsOnline] = useState(true)
+  const [history, setHistory] = useState(JSON.parse(localStorage.getItem("history")))
   // useEffect(()=>{
   //    ? setIsOnline(true) : setIsOnline(false)
   // },[navigator.onLine])
@@ -71,14 +73,16 @@ function App() {
   };
 
   return (
-    <div className="items-center pt-6 App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
+    <div className="items-center pt-9 App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
 
       {/* <div className='bg-yellow-200 text-orange-600 font-semibold ' onClick={()=>{handleNotificationClick()}}>Send Notification</div> */}
       {!navigator.onLine? <div className='bg-yellow-200 text-orange-600 font-semibold '>Offline or Connectivity Error</div>: ""}
       <Navbar/>
-      <Sidebar/>
-      <Grid handleNotificationClick={handleNotificationClick}/>
+      <Sidebar history={history} setHistory={setHistory}/>
+      <Grid history={history} setHistory={setHistory} handleNotificationClick={handleNotificationClick}/>
+      
       <Contact/>
+      <Footer/>
     </div>
   );
 }
