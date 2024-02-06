@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 
 function App() {
   const [isOnline, setIsOnline] = useState(true)
+  const [open, setOpen] = useState(false)
   const [history, setHistory] = useState(JSON.parse(localStorage.getItem("history")))
   // useEffect(()=>{
   //    ? setIsOnline(true) : setIsOnline(false)
@@ -73,12 +74,12 @@ function App() {
   };
 
   return (
-    <div className="items-center pt-9 App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
+    <div className="items-center pt-2 App bg-yellow-50 min-h-screen" style={{textAlign: "-webkit-center"}}>
 
       {/* <div className='bg-yellow-200 text-orange-600 font-semibold ' onClick={()=>{handleNotificationClick()}}>Send Notification</div> */}
       {!navigator.onLine? <div className='bg-yellow-200 text-orange-600 font-semibold '>Offline or Connectivity Error</div>: ""}
-      <Navbar/>
-      <Sidebar history={history} setHistory={setHistory}/>
+      <Navbar open={open} setOpen={setOpen}/>
+      <Sidebar history={history} setHistory={setHistory} open={open} setOpen={setOpen}/>
       <Grid history={history} setHistory={setHistory} handleNotificationClick={handleNotificationClick}/>
       
       <Contact/>

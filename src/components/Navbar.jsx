@@ -1,11 +1,34 @@
 import { useState } from 'react'
 
-const Navbar = () => {
+const Navbar = ({open, setOpen}) => {
+    
+
 
   return (
     
+
                 
             <div className="max-w-screen-xl mx-auto px-4 md:px-8 w-[700px] max-md:w-screen">
+                <div className='flex items-center justify-between py-2'>
+
+                
+                  <div className=' px-2 py-1 ' >
+
+                        <img
+                            src="/banner.png"
+                            width={120}
+                            height={50}
+                            alt="JankiNathDas logo"
+                        />
+                    </div>
+                        {/* <div className=' hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md  px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}> */}
+                    <div className=' hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}>
+
+                        <i className="fa-solid fa-clock-rotate-left mx-1"/>
+                            History
+                    </div>
+                </div>
+
                 <div className="items-start justify-between py-4 border-b md:flex">
                     <div className="max-w-[700px] text-left">
                         <h3 className="text-orange-800 text-2xl font-bold">

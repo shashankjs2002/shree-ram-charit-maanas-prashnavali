@@ -3,8 +3,8 @@ import HistoryCard from './HistoryCard'
 
 
 
-const Sidebar = ({history, setHistory}) => {
-  const [open, setOpen] = useState(false)
+const Sidebar = ({history, setHistory, open, setOpen}) => {
+  // const [open, setOpen] = useState(false)
 
   const [pastChaupayian, setPastChaupayian] = useState(null)
   
@@ -24,7 +24,7 @@ const Sidebar = ({history, setHistory}) => {
     <div>
 
     
-        <div className='absolute hover:cursor-pointer  text-sm md:text-md top-4 left-3 px-2 py-1 ' >
+        {/* <div className='absolute hover:cursor-pointer  text-sm md:text-md top-4 left-3 px-2 py-1 ' >
 
         <img
                     src="/banner.png"
@@ -33,12 +33,12 @@ const Sidebar = ({history, setHistory}) => {
                     alt="JankiNathDas logo"
                 />
           </div>
-        {/* <div className=' hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md  px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}> */}
+      
         <div className='absolute hover:cursor-pointer hover:bg-[#fab163] text-sm md:text-md top-4 right-3 px-2 py-1 font-bold rounded-md border bg-[#fab163cf]' onClick={()=>{setOpen(true)}}>
 
           <i className="fa-solid fa-clock-rotate-left mx-1"/>
             History
-          </div>
+          </div> */}
       
 
 
