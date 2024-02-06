@@ -45,7 +45,9 @@ const Contact = () => {
                     <ul className="mt-12 gap-y-6 gap-x-12 items-center md:flex lg:gap-x-0 lg:mt-0">
                         {
                             contactMethods.map((item, idx) => (
-                                <li key={idx} className="space-y-3 border-t py-6 md:max-w-sm md:py-0 md:border-t-0 lg:border-l lg:px-12 lg:max-w-none">
+                                <li key={idx} className="space-y-3 border-t py-6 md:max-w-sm md:py-0 md:border-t-0 lg:border-l lg:px-12 
+                                lg:max-w-none
+                                ">
                                     <div className="w-12 h-12 rounded-full border flex items-center justify-center text-gray-700">
                                         {item.icon}
                                     </div>

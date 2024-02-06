@@ -43,7 +43,9 @@ const Grid = ({ handleNotificationClick, history, setHistory }) => {
     }
     return (
         <div className="">
+            <span className="text-md font-bold">किसी एक अक्षर पर क्लिक करे </span>
             <div className="flex justify-center mt-5  px-4 md:px-8 ">
+                
                 <div className="grid max-md:w-full text-xs md:text-base  flex-wrap w-[700px] border-orange-500 border-2 " style={{ gridTemplateColumns: " repeat(15, minmax(0, 1fr))" }}>
 
                     {gridLetters.map((letter, idx) => {
